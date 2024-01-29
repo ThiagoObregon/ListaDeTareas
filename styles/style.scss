@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: aqua;
+    height: 10vh;
+}
+
+main {
+    background-color: rgb(223, 23, 23);
+    height: 90vh;
+    display: flex;
+    justify-content: center; //Centra Horizontal
+    align-items: center; //Centra Vertical
+}
+
+.Contenedor_Tarea {
+    background-color: blue;
+    height: 80%;
+    width: 95%;
+    display: grid;
+    grid-template-areas:
+        "Superior Superior Superior"
+        "Estado0 Nombre0 Detalle0"
+        "Estado1 Nombre1 Detalle1"
+        "Estado2 Nombre2 Detalle2";
+    grid-auto-rows: max-content;
+    grid-auto-columns: auto;
+
+
+}
+
+.HeaderTareas {
+    grid-area: Superior;
+    background-color: coral;
+    display: flex;
+}
+
+.ContenedorAncho1 {
+    flex: 1;
+}
+
+/* styles/style.css */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.scss.map */
