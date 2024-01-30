@@ -3,20 +3,30 @@
     padding: 0;
 }
 
+.ListaDesordenada {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    background-color: rgb(223, 23, 23);
 }
 
 header {
     background-color: aqua;
-    height: 10vh;
+    height: 10%;
+    padding: 1%;
 }
 
 main {
     background-color: rgb(223, 23, 23);
-    height: 90vh;
+    height: 90%;
     display: flex;
     justify-content: center; //Centra Horizontal
     align-items: center; //Centra Vertical
@@ -24,26 +34,26 @@ main {
 
 .Contenedor_Tarea {
     background-color: blue;
-    height: 80%;
+    border-top: 20%;
+    height: 100%;
     width: 95%;
     display: grid;
-    grid-template-areas:
-        "Superior"
-        "Inferior"
-    ;
-    grid-auto-rows: max-content;
-    grid-auto-columns: auto;
-
-
+    grid-template-columns: 100%;
+    grid-template-rows: 10%;
+    row-gap: 10px;
 }
 
 .Contenedor_Tarea_Inferior {
-    grid-area: Inferior;
+    grid-column: auto;
+    height: fit-content;
+    max-width: 100%;
     display: flex;
+    gap: 10px;
 }
 
 .Nombre_Tarea {
     flex: 1;
+    gap: 10px;
 }
 
 .Estado_Tarea {
@@ -60,7 +70,9 @@ main {
 }
 
 .HeaderTareas {
-    grid-area: Superior;
+    grid-column: 1;
+    grid-row: 1;
+    height: 7%;
     background-color: coral;
     display: flex;
 }
