@@ -28,13 +28,34 @@ main {
     width: 95%;
     display: grid;
     grid-template-areas:
-        "Superior Superior Superior"
-        "Estado0 Nombre0 Detalle0"
-        "Estado1 Nombre1 Detalle1"
-        "Estado2 Nombre2 Detalle2";
+        "Superior"
+        "Inferior"
+    ;
     grid-auto-rows: max-content;
     grid-auto-columns: auto;
 
+
+}
+
+.Contenedor_Tarea_Inferior {
+    grid-area: Inferior;
+    display: flex;
+}
+
+.Nombre_Tarea {
+    flex: 1;
+}
+
+.Estado_Tarea {
+    flex: 1;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.Detalle_Tarea {
+    flex: 1;
+    width: -moz-fit-content;
+    width: fit-content;
 
 }
 

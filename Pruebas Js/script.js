@@ -15,3 +15,7 @@ function calculate() {
         display.value = 'Error';
     }
 }
+
+function clear1item() {
+    display.value = display.value.slice(0, -1);
+}
